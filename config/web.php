@@ -7,8 +7,8 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'layout' => 'markup',
     'language' => 'ru',
+    'homeUrl'=>'/',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -17,7 +17,7 @@ $config = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'btF0ZmtJ9dTYph5Kx0qJ0ksGMkmyBaIQ',
-            /*'baseUrl'=> '',*/
+            'baseUrl'=> '',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -51,6 +51,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                    'img/math' => 'monitor/img/math',
+                    'img/pe' => 'monitor/img/pe',
                 ],
         ],
 

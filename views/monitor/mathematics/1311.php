@@ -25,6 +25,7 @@ $this->title = $title;
                 <div id="1" style="color: #ff0; font-size: 35px;"><?= $l_block ?></div>
             </center>
             </p>
+
             <?php foreach ($lessons as $lesson): ?>
 
                 <?php if ($lesson->getRoomNumber() == $title) { ?>
@@ -38,6 +39,7 @@ $this->title = $title;
 
             <?php endforeach; ?>
 
+            </p>
             <center>
                 <div id="lesson" style="color: #ff0;">Идет - урок</div>
             </center>

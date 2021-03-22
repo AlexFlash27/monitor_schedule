@@ -75,7 +75,7 @@ class Monitor extends ActiveRecord
         return '';
     }
 
-    /**
+     /**
      * {@inheritdoc}
      */
     public function attributeLabels()

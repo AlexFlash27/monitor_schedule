@@ -4,7 +4,6 @@ namespace app\controllers;
 
 use Yii;
 use app\models\Monitor;
-use app\models\MonitorSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -35,31 +34,62 @@ class MonitorController extends Controller
      */
     public function actionIndex()
     {
+        $this->layout = 'math';
+
         $conditions = ['week_day' => date('w'),];
         $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
 
         return $this->render('index', ['lessons' => $lessons]);
     }
 
-    public function actionInsert()
+    public function actionInsert_math()
     {
-        return $this->renderPartial('insert');
+        return $this->renderPartial('insert_math');
+    }
+
+    public function actionInsert_pe()
+    {
+        return $this->renderPartial('insert_pe');
+    }
+
+    public function action1311()
+    {
+        $this->layout = 'math';
+
+        $conditions = ['week_day' => date('w'),];
+        $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
+
+        return $this->render('mathematics/1311', ['lessons' => $lessons]);
     }
 
     public function action1312()
     {
+        $this->layout = 'math';
+
         $conditions = ['week_day' => date('w'),];
         $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
 
         return $this->render('mathematics/1312', ['lessons' => $lessons]);
     }
 
-    public function action1311()
+    public function action1315()
     {
+        $this->layout = 'it';
+
         $conditions = ['week_day' => date('w'),];
         $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
 
-        return $this->render('mathematics/1311', ['lessons' => $lessons]);
+        return $this->render('1315', ['lessons' => $lessons]);
+    }
+
+    public function action1317()
+    {
+        $this->layout = 'pe';
+
+        $conditions = ['week_day' => date('w'),];
+        $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
+
+        return $this->render('pe/1317', ['lessons' => $lessons]);
     }
 
     /**
