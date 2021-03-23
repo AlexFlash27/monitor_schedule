@@ -1,7 +1,7 @@
 body {
-    margin: 15px 15px 0px 15px;
-    overflow: hidden;
     font-size: 40px;
+    margin: 15px 15px 0 15px;
+    overflow: hidden;
     color: white;
     background: url(../img/bg1.jpg)
 }
@@ -20,30 +20,22 @@ body {
 
 .room_number {
     font-size: 100px;
+    font-family: MISTRAL, sans-serif;
     float: left;
     color: #00ff00;
-    padding: 0px 20px;
+    padding: 0 20px;
     border-radius: 7px;
-    font-family: MISTRAL, sans-serif;
 }
-
-/*.school_logo {
-    font-size: 100px;
-    float: right;
-    background: #44546a;
-    color: #fff;
-    padding: 0px 10px;
-    //border-radius: 7px;
-    //border-right: 3px solid #ccc;
-    }*/
 
 .room_name {
     font-size: 55px;
     text-align: center;
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0 0 0;
 }
 
 .schedule_block {
+    font-size: 35px;
+    text-align: center;
     border: 3px solid #000;
     border-radius: 7px;
     width: calc(50% - 7.5px);
@@ -53,11 +45,11 @@ body {
     max-height: 30vh;
     float: left;
     padding: 10px;
-    font-size: 35px;
 }
 
 .info_block {
     font-size: 35px;
+    text-align: center;
     border: 3px solid #000;
     border-radius: 7px;
     width: calc(50% - 7.5px);
@@ -69,9 +61,10 @@ body {
 }
 
 .tasks_block {
+    font-size: 35px;
+    text-align: center;
     width: auto;
     height: 56vh;
-    font-size: 35px;
     border: 3px solid #000;
     border-radius: 7px;
     padding-left: 1rem !important;
@@ -80,23 +73,10 @@ body {
     margin-top: 1rem !important;
 }
 
-/*.facts_block {
-    width: auto;
-    //height: 440px;
-    height: 290px;
-    background: #44546a;
-    font-size: 35px;
-    border: 3px solid #000;
-    border-radius: 7px;
-    padding-left: 1rem!important;
-    padding-top: 1rem!important;
-    margin-top: 1rem!important;
-    }*/
-
 .fire-safety_block {
-    color: #ed4c47;
-    text-align: left;
     font-size: 30px;
+    text-align: left;
+    color: #ed4c47;
     margin-top: 1rem !important;
 }
 
@@ -105,7 +85,7 @@ table {
 }
 
 td, tr, th {
-    border: 2px solid black;
     text-align: left;
+    border: 2px solid black;
     padding: 8px;
 }

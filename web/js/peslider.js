@@ -22,7 +22,7 @@ $(document).ready(function () {
             console.log(gto1);
             console.log(gto2);
 
-            if (gto1.length != 0 && gto2.length != 0 && sportmans.length !=0) {
+            if (gto1.length != 0 && gto2.length != 0 && sportmans.length != 0) {
 
                 function changesm() {
 
@@ -35,6 +35,7 @@ $(document).ready(function () {
                     }
                     setTimeout(changesm, time); //RUN FUNCTION EVERY X SECONDS
                 }
+
                 window.onload = changesm(); //RUN FUNCTION WHEN PAGE LOADS
 
                 function changegto1() {
@@ -48,6 +49,7 @@ $(document).ready(function () {
                     }
                     setTimeout(changegto1, time); //RUN FUNCTION EVERY X SECONDS
                 }
+
                 window.onload = changegto1(); //RUN FUNCTION WHEN PAGE LOADS
 
                 function changegto2() {
@@ -61,6 +63,7 @@ $(document).ready(function () {
                     }
                     setTimeout(changegto2, time); //RUN FUNCTION EVERY X SECONDS
                 }
+
                 window.onload = changegto2(); //RUN FUNCTION WHEN PAGE LOADS
             }
         }

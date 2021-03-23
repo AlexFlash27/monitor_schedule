@@ -52,6 +52,16 @@ class MonitorController extends Controller
         return $this->renderPartial('insert_pe');
     }
 
+    public function action1307()
+    {
+        $this->layout = 'horiz_math';
+
+        $conditions = ['week_day' => date('w'),];
+        $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
+
+        return $this->render('mathematics/1307', ['lessons' => $lessons]);
+    }
+
     public function action1311()
     {
         $this->layout = 'math';

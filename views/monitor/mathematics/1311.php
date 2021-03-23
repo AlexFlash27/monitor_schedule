@@ -21,18 +21,15 @@ $this->title = $title;
         </div>
 
         <div class="schedule_block" style="font-size: 24px">
-            <center>
-                <div id="1" style="color: #ff0; font-size: 35px;"><?= $l_block ?></div>
-            </center>
+
+            <div id="1" style="color: #ff0; font-size: 35px;"><?= $l_block ?></div>
             </p>
 
             <?php foreach ($lessons as $lesson): ?>
 
                 <?php if ($lesson->getRoomNumber() == $title) { ?>
-
-                    <p style="text-align: center;"> <?php echo $lesson->subject_seq . '. '; ?><?php echo $lesson->subject_name; ?>
-                        <?php echo '(' . $lesson->getClassName() . ')'; ?>
-
+                    <p> <?php echo $lesson->subject_seq . '. '; ?><?php echo $lesson->subject_name; ?>
+                        <?php echo '(' . $lesson->getClassName() . ')'; ?></p>
                     <?php /*echo $lesson->getRoomNumber(); */ ?>
 
                 <?php } ?>
@@ -40,35 +37,26 @@ $this->title = $title;
             <?php endforeach; ?>
 
             </p>
-            <center>
-                <div id="lesson" style="color: #ff0;">Идет - урок</div>
-            </center>
-            <center>
-                <div id="lesson-time" style="color: #ff0;">До окончания: -- минут</div>
-            </center>
+            <div id="lesson" style="color: #ff0;">Идет - урок</div>
+            <div id="lesson-time" style="color: #ff0;">До окончания: -- минут</div>
         </div>
 
         <div class="info_block">
-            <center>
-                <div id="2" style="color: #ff0;"><?= $r_block ?></div>
-            </center>
-            <br>
+            <div id="2" style="color: #ff0;"><?= $r_block ?></div>
+            </p>
             <img id="slide" height="626px">
         </div>
     </div>
 </div>
 
 <div class="tasks_block">
-    <center>
-        <div id="3" style="color: #ff0;"><?= $m_block_1 ?></div>
-    </center>
+    <div id="3" style="color: #ff0;"><?= $m_block_1 ?></div>
     <video id="video" autoplay loop muted style="width: 98%; height: 50%;">
-        <source src = <?= Yii::getAlias('@web') . "/img/vid2.mp4" ?>>
+        <source src= <?= Yii::getAlias('@web') . "/img/vid2.mp4" ?>>
     </video>
 
-    <center>
-        <div id="4" style="color: #ff0;"><?= $m_block_2 ?></div>
-    </center>
+    <div id="4" style="color: #ff0;"><?= $m_block_2 ?></div>
+
     <marquee behavior="" ; direction="up" ; scrollamount="2" height="34%">
         <ul>
             <li>
@@ -86,6 +74,7 @@ $this->title = $title;
             </li>
         </ul>
     </marquee>
+
 </div>
 
 <div class="fire-safety_block">

@@ -21,50 +21,38 @@ $this->title = $title;
         </div>
 
         <div class="schedule_block">
-            <center>
-                <div id="1" style="color: #ff0; font-size: 35px;"><?= $l_block ?></div>
-            </center>
+            <div id="1" style="color: #ff0; font-size: 35px;"><?= $l_block ?></div>
             </p>
 
             <p>
-            <center>ПН-ПТ 08:30-17:30</center>
+                ПН-ПТ 08:30-17:30
             </p>
             <p>
-            <center>ОБЕД 11:30-12:30</center>
+                ОБЕД 11:30-12:30
             </p>
 
             </p>
-            <center>
-                <div id="lesson" style="color: #ff0;">Идет - урок</div>
-            </center>
-            <center>
-                <div id="lesson-time" style="color: #ff0;">До окончания: -- минут</div>
-            </center>
+            <div id="lesson" style="color: #ff0;">Идет - урок</div>
+            <div id="lesson-time" style="color: #ff0;">До окончания: -- минут</div>
         </div>
 
         <div class="info_block">
-            <center>
-                <div id="2" style="color: #ff0;"><?= $r_block ?></div>
-            </center>
+            <div id="2" style="color: #ff0;"><?= $r_block ?></div>
             </p>
-            <center>
-                <img id="soc" height="480px" src=<?= Yii::getAlias('@web') . "/img/soc.png" ?>>
-            </center>
+            <img id="soc" height="480px" src=<?= Yii::getAlias('@web') . "/img/soc.png" ?>>
         </div>
     </div>
 </div>
 
 <div class="tasks_block">
-    <center>
-        <div id="3" style="color: #ff0;"><?= $m_block_1 ?></div>
-    </center>
+
+    <div id="3" style="color: #ff0;"><?= $m_block_1 ?></div>
     <video id="video" autoplay loop muted style="width: 100%; height: 50%;">
         <source src= <?= Yii::getAlias('@web') . "/img/it.mp4" ?>>
     </video>
 
-    <center>
-        <div id="4" style="color: #ff0;"><?= $m_block_2 ?></div>
-    </center>
+    <div id="4" style="color: #ff0;"><?= $m_block_2 ?></div>
+
     <marquee behavior="" ; direction="up" ; scrollamount="2" height="37%">
         <ul>
             <li>
@@ -109,6 +97,7 @@ $this->title = $title;
             </li>
         </ul>
     </marquee>
+
 </div>
 
 <div class="fire-safety_block">

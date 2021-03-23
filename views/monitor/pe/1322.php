@@ -21,15 +21,13 @@ $this->title = $title;
         </div>
 
         <div class="schedule_block">
-            <center>
-                <div id="1" style="color: #ff0; font-size: 35px;"><?= $l_block ?></div>
-            </center>
+            <div id="1" style="color: #ff0; font-size: 35px;"><?= $l_block ?></div>
             </p>
 
             <?php foreach ($lessons as $lesson): ?>
 
                 <?php if ($lesson->getRoomNumber() == $title) { ?>
-                    <p style="text-align: center;"> <?php echo $lesson->subject_seq . '. '; ?><?php echo $lesson->subject_name; ?>
+                    <p> <?php echo $lesson->subject_seq . '. '; ?><?php echo $lesson->subject_name; ?>
                         <?php echo '(' . $lesson->getClassName() . ')'; ?></p>
                     <?php /*echo $lesson->getRoomNumber(); */ ?>
 
@@ -38,40 +36,27 @@ $this->title = $title;
             <?php endforeach; ?>
 
             </p>
-            <center>
-                <div id="lesson" style="color: #ff0;">Идет - урок</div>
-            </center>
-            <center>
-                <div id="lesson-time" style="color: #ff0;">До окончания: -- минут</div>
-            </center>
+            <div id="lesson" style="color: #ff0;">Идет - урок</div>
+            <div id="lesson-time" style="color: #ff0;">До окончания: -- минут</div>
         </div>
 
         <div class="info_block">
-            <center>
-                <div id="2" style="color: #ff0;"><?= $r_block ?></div>
-            </center>
-            <br>
+            <div id="2" style="color: #ff0;"><?= $r_block ?></div>
+            </p>
             <img id="sportmans" height="626px">
         </div>
     </div>
 </div>
 
 <div class="tasks_block">
-    <center>
-        <div id="3" style="color: #ff0;"><?= $m_block_1 ?></div>
-    </center>
+    <div id="3" style="color: #ff0;"><?= $m_block_1 ?></div>
     </p>
-
-    <center>
-        <img id="gto1" style="width: 30%; margin-right: 10%">
-        <img id="gto2" style="width: 30%;">
-    </center>
-
+    <img id="gto1" style="width: 37%;">
+    <img id="gto2" style="width: 37%;">
     </p>
-    <center>
-        <div id="4" style="color: #ff0;"><?= $m_block_2 ?></div>
-    </center>
-    <marquee behavior="" ; direction="up" ; scrollamount="1" height="230vh">
+    <div id="4" style="color: #ff0;"><?= $m_block_2 ?></div>
+
+    <marquee behavior="" ; direction="up" ; scrollamount="1" height="290vh">
         <ul>
             <li>
                 Спортзал учащиеся посещают по расписанию уроков физической культуры и секций.
@@ -108,6 +93,6 @@ $this->title = $title;
     </marquee>
 </div>
 
-<div style="margin-top: 1rem !important;" class="fire-safety_block">
+<div class="fire-safety_block">
     <b>&nbsp;Ответственный за пожарную безопасность:</b> <?= $fs_block ?>
 </div>

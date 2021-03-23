@@ -12,14 +12,15 @@ body {
 }
 
 .room_block {
-    width: 100%;;
+    width: 100%;
+    height: 10vh;
     border-radius: 7px;
     border: 3px solid #000;
     color: #ff0;
 }
 
 .room_number {
-    font-size: 100px;
+    font-size: 75px;
     font-family: MISTRAL, sans-serif;
     float: left;
     color: #00ff00;
@@ -30,7 +31,6 @@ body {
 .room_name {
     font-size: 70px;
     text-align: center;
-    padding: 20px 0 0 0;
 }
 
 .schedule_block {
@@ -38,43 +38,47 @@ body {
     text-align: center;
     border: 3px solid #000;
     border-radius: 7px;
-    width: calc(50% - 7.5px);
+    width: 30%;
     margin-top: 15px;
-    margin-right: 15px;
-    min-height: 35vh;
+    margin-right: 10px;
+    min-height: 83vh;
+    max-height: 85vh;
     float: left;
     padding: 10px;
 }
 
 .info_block {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     border: 3px solid #000;
     border-radius: 7px;
-    width: calc(50% - 7.5px);
+    width: 30%;
     margin-top: 15px;
-    min-height: 45vh;
+    min-height: 83vh;
+    max-height: 85vh;
     float: right;
     padding: 10px;
 }
 
 .tasks_block {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
-    width: auto;
-    height: 780px;
     border: 3px solid #000;
     border-radius: 7px;
-    padding-left: 1rem !important;
-    padding-top: 1rem !important;
-    margin-top: 1rem !important;
+    width: 39%;
+    margin-top: 15px;
+    margin-left: 8px;
+    min-height: 83vh;
+    max-height: 85vh;
+    float: right;
+    padding: 10px;
 }
 
 .fire-safety_block {
     font-size: 30px;
     text-align: left;
     color: #ed4c47;
-    margin-top: 1rem !important;
+  //margin-top: 1 rem !important;
 }
 
 table {

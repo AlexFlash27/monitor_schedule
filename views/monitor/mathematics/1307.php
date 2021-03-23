@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$title = '1312'; //НОМЕР КАБИНЕТА
+$title = '1307'; //НОМЕР КАБИНЕТА
 $room_lesson = 'КАБИНЕТ МАТЕМАТИКИ'; //НАЗВАНИЕ КАБИНЕТА
 $l_block = 'РАСПИСАНИЕ'; //ЛЕВЫЙ БЛОК
 $r_block = 'В ЭТОТ ДЕНЬ РОДИЛИСЬ'; //ПРАВЫЙ БЛОК
@@ -41,39 +41,40 @@ $this->title = $title;
         </div>
 
         <div class="info_block">
-            <div id="2" style="color: #ff0;"><?= $r_block ?></div>
+            <div id="2" style="color: #ff0; font-size: 35px;"><?= $r_block ?></div>
             </p>
-            <img id="slide" height="626px">
+            <img id="slide" height="700px">
+        </div>
+
+        <div class="tasks_block">
+            <div id="3" style="color: #ff0; font-size: 35px;"><?= $m_block_1 ?></div>
+            <video id="video" autoplay loop muted style="width: 98%; height: 45%;">
+                <source src= <?= Yii::getAlias('@web') . "/img/vid2.mp4" ?>>
+            </video>
+
+            <div id="4" style="color: #ff0;"><?= $m_block_2 ?></div>
+
+            <marquee behavior="" ; direction="up" ; scrollamount="2" height="40%">
+                <ul>
+                    <li>
+                        Среди всех фигур с одинаковым периметром, у круга будет самая большая площадь. И наоборот, среди
+                        всех
+                        фигур с одинаковой площадью, у круга будет самый маленький периметр.
+                    </li>
+                    <li>
+                        Ноль – единственное в математике число, которое нельзя написать римскими цифрами.
+                    </li>
+                    <li>
+                        Число 18 – единственное кроме нуля, сумма цифр которого в два раза меньше него самого.
+                    </li>
+                    <li>
+                        Сумма чисел от 1 до 100 составляет 5050.
+                    </li>
+                </ul>
+            </marquee>
+
         </div>
     </div>
-</div>
-
-<div class="tasks_block">
-    <div id="3" style="color: #ff0;"><?= $m_block_1 ?></div>
-    <video id="video" autoplay loop muted style="width: 98%; height: 50%;">
-        <source src= <?= Yii::getAlias('@web') . "/img/vid2.mp4" ?>>
-    </video>
-
-    <div id="4" style="color: #ff0;"><?= $m_block_2 ?></div>
-
-    <marquee behavior="" ; direction="up" ; scrollamount="2" height="34%">
-        <ul>
-            <li>
-                Среди всех фигур с одинаковым периметром, у круга будет самая большая площадь. И наоборот, среди всех
-                фигур с одинаковой площадью, у круга будет самый маленький периметр.
-            </li>
-            <li>
-                Ноль – единственное в математике число, которое нельзя написать римскими цифрами.
-            </li>
-            <li>
-                Число 18 – единственное кроме нуля, сумма цифр которого в два раза меньше него самого.
-            </li>
-            <li>
-                Сумма чисел от 1 до 100 составляет 5050.
-            </li>
-        </ul>
-    </marquee>
-
 </div>
 
 <div class="fire-safety_block">
