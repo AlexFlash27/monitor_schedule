@@ -92,6 +92,16 @@ class MonitorController extends Controller
         return $this->render('pe/1317', ['lessons' => $lessons]);
     }
 
+    public function action1322()
+    {
+        $this->layout = 'pe';
+
+        $conditions = ['week_day' => date('w'),];
+        $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
+
+        return $this->render('pe/1322', ['lessons' => $lessons]);
+    }
+
     /**
      * Displays a single Monitor model.
      * @param integer $id

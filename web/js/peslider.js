@@ -26,12 +26,12 @@ $(document).ready(function () {
 
                 function changesm() {
 
-                    document.getElementById('sportmans').src = sportmans[i];
+                    document.getElementById('sportmans').src = "/" + sportmans[i];
 
-                    if (i < sportmans.length - 1) { //CHECK IF INDEX IS UNDER MAX
-                        i++; //ADD 1 TO INDEX
+                    if (x < sportmans.length - 1) { //CHECK IF INDEX IS UNDER MAX
+                        x++; //ADD 1 TO INDEX
                     } else {
-                        i = 0; //RESET BACK TO 0
+                        x = 0; //RESET BACK TO 0
                     }
                     setTimeout(changesm, time); //RUN FUNCTION EVERY X SECONDS
                 }
@@ -39,7 +39,7 @@ $(document).ready(function () {
 
                 function changegto1() {
 
-                    document.getElementById('gto1').src = gto1[i];
+                    document.getElementById('gto1').src = "/" + gto1[i];
 
                     if (i < gto1.length - 1) { //CHECK IF INDEX IS UNDER MAX
                         i++; //ADD 1 TO INDEX
@@ -52,7 +52,7 @@ $(document).ready(function () {
 
                 function changegto2() {
 
-                    document.getElementById('gto2').src = gto2[i];
+                    document.getElementById('gto2').src = "/" + gto2[i];
 
                     if (z < gto2.length - 1) { //CHECK IF INDEX IS UNDER MAX
                         z++; //ADD 1 TO INDEX

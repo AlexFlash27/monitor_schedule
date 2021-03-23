@@ -22,10 +22,8 @@ body {
     font-size: 100px;
     float: left;
     color: #00ff00;
-/ / padding: 10 px 40 px;
     padding: 0px 20px;
     border-radius: 7px;
-/ / border-right: 3 px solid #000;
     font-family: MISTRAL, sans-serif;
 }
 
@@ -40,7 +38,7 @@ body {
     }*/
 
 .room_name {
-    font-size: 61px;
+    font-size: 55px;
     text-align: center;
     padding: 20px 0px 0px 0px;
 }

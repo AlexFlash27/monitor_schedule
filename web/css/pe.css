@@ -72,7 +72,8 @@ body {
 
 .tasks_block {
     width: auto;
-    height: 39vh;
+    min-height: 39vh;
+    max-height: 40vh;
     font-size: 35px;
     border: 3px solid #000;
     border-radius: 7px;
@@ -99,7 +100,6 @@ body {
     color: #ed4c47;
     text-align: left;
     font-size: 30px;
-    margin-top: 1rem !important;
 }
 
 table {

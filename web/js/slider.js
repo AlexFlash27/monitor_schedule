@@ -17,7 +17,7 @@ $(document).ready(function () {
 
                 function changeImg() {
 
-                    document.getElementById('slide').src = images[i];
+                    document.getElementById('slide').src = "/" + images[i];
 
                     if (i < images.length - 1) { //CHECK IF INDEX IS UNDER MAX
                         i++; //ADD 1 TO INDEX

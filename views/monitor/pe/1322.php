@@ -2,8 +2,8 @@
 
 /* @var $this yii\web\View */
 
-$title = '1317'; //НОМЕР КАБИНЕТА
-$room_lesson = 'ЮЖНЫЙ ЗАЛ'; //НАЗВАНИЕ КАБИНЕТА
+$title = '1322'; //НОМЕР КАБИНЕТА
+$room_lesson = 'СЕВЕРНЫЙ ЗАЛ'; //НАЗВАНИЕ КАБИНЕТА
 $l_block = 'РАСПИСАНИЕ'; //ЛЕВЫЙ БЛОК
 $r_block = 'СПОРТСМЕНЫ УДМУРТИИ'; //ПРАВЫЙ БЛОК
 $m_block_1 = 'НОРМАТИВЫ ГТО'; //СРЕДНИЙ БЛОК 1
@@ -20,7 +20,7 @@ $this->title = $title;
             <div class="room_name"><?= $room_lesson ?></div>
         </div>
 
-        <div class="schedule_block" style="font-size: 25px">
+        <div class="schedule_block">
             <center>
                 <div id="1" style="color: #ff0; font-size: 35px;"><?= $l_block ?></div>
             </center>
@@ -108,6 +108,6 @@ $this->title = $title;
     </marquee>
 </div>
 
-<div class="fire-safety_block">
+<div style="margin-top: 1rem !important;" class="fire-safety_block">
     <b>&nbsp;Ответственный за пожарную безопасность:</b> <?= $fs_block ?>
 </div>
