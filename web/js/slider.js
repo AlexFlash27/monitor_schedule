@@ -10,7 +10,7 @@ $(document).ready(function () {
             var unfiltered_images = data;	//UNFILTERED IMAGES ARRAY
             var time = 30000;	//TIME BETWEEN SWITCH
 
-            var images = unfiltered_images.filter(file => file.endsWith('.JPG')); //FILE FILTER BY EXTENSION
+            var images = unfiltered_images.filter(file => file.endsWith('.JPG') || file.endsWith('.jpg')); //FILE FILTER BY EXTENSION
             console.log(images);
 
             if (images.length != 0) {
@@ -18,6 +18,8 @@ $(document).ready(function () {
                 function changeImg() {
 
                     document.getElementById('slide').src = "/" + images[i];
+                    //document.getElementById('sign').innerHTML = images[i].substring(images[i].lastIndexOf('\\')+1,images[i].lastIndexOf(".JPG"));
+
 
                     if (i < images.length - 1) { //CHECK IF INDEX IS UNDER MAX
                         i++; //ADD 1 TO INDEX

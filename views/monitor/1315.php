@@ -8,7 +8,7 @@ $l_block = 'ГРАФИК РАБОТЫ'; //ЛЕВЫЙ БЛОК
 $r_block = 'ШКОЛА В СОЦСЕТЯХ'; //ПРАВЫЙ БЛОК
 $m_block_1 = 'ТЕХНОЛОГИИ БУДУЩЕГО'; //СРЕДНИЙ БЛОК 1
 $m_block_2 = '10 ПРАВИЛ БЕЗОПАСНОГО ПОВЕДЕНИЯ В ИНТЕРНЕТЕ'; //СРЕДНИЙ БЛОК 2
-$fs_block = 'Арсланова Ю.А.'; //ОТВЕТСТВЕННЫЙ ЗА ПОЖАРНУЮ БЕЗОПАСНОСТЬ
+$fs_block = 'Ю.А. Арсланова'; //ОТВЕТСТВЕННЫЙ ЗА ПОЖАРНУЮ БЕЗОПАСНОСТЬ
 
 $this->title = $title;
 ?>
@@ -47,7 +47,7 @@ $this->title = $title;
 <div class="tasks_block">
 
     <div id="3" style="color: #ff0;"><?= $m_block_1 ?></div>
-    <video id="video" autoplay loop muted style="width: 100%; height: 50%;">
+    <video id="video" autoplay loop muted style="width: 98%; height: 50%;">
         <source src= <?= Yii::getAlias('@web') . "/img/it.mp4" ?>>
     </video>
 

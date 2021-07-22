@@ -21,7 +21,6 @@ class PeAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
-        /*'css/math.css',*/
         'css/pe.css',
     ];
     public $js = [

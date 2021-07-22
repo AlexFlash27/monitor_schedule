@@ -36,7 +36,7 @@ class MonitorController extends Controller
     {
         $this->layout = 'math';
 
-        $conditions = ['week_day' => date('w'),];
+        $conditions = ['week_day' => date('w')];
         $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
 
         return $this->render('index', ['lessons' => $lessons]);
@@ -52,21 +52,76 @@ class MonitorController extends Controller
         return $this->renderPartial('insert_pe');
     }
 
+    public function actionInsert_art()
+    {
+        return $this->renderPartial('insert_art');
+    }
+
+    public function action1303()
+    {
+        $this->layout = 'math';
+
+        $conditions = ['week_day' => date('w')];
+        $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
+
+        return $this->render('mathematics/1303', ['lessons' => $lessons]);
+    }
+
+    public function action1306()
+    {
+        $this->layout = 'horiz_math';
+
+        $conditions = ['week_day' => date('w')];
+        $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
+
+        return $this->render('mathematics/1306', ['lessons' => $lessons]);
+    }
+
     public function action1307()
     {
         $this->layout = 'horiz_math';
 
-        $conditions = ['week_day' => date('w'),];
+        $conditions = ['week_day' => date('w')];
         $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
 
         return $this->render('mathematics/1307', ['lessons' => $lessons]);
+    }
+
+    public function action1308()
+    {
+        $this->layout = 'horiz_math';
+
+        $conditions = ['week_day' => date('w')];
+        $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
+
+        return $this->render('mathematics/1308', ['lessons' => $lessons]);
+    }
+
+    public function action1309()
+    {
+        $this->layout = 'art';
+
+        $conditions = ['week_day' => date('w')];
+        $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
+
+        return $this->render('1309', ['lessons' => $lessons]);
+    }
+
+    public function action1310()
+    {
+        $this->layout = 'it';
+
+        $conditions = ['week_day' => date('w')];
+        $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
+
+        return $this->render('1310', ['lessons' => $lessons]);
     }
 
     public function action1311()
     {
         $this->layout = 'math';
 
-        $conditions = ['week_day' => date('w'),];
+        $conditions = ['week_day' => date('w')];
         $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
 
         return $this->render('mathematics/1311', ['lessons' => $lessons]);
@@ -76,17 +131,37 @@ class MonitorController extends Controller
     {
         $this->layout = 'math';
 
-        $conditions = ['week_day' => date('w'),];
+        $conditions = ['week_day' => date('w')];
         $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
 
         return $this->render('mathematics/1312', ['lessons' => $lessons]);
+    }
+
+    public function action1313()
+    {
+        $this->layout = 'math';
+
+        $conditions = ['week_day' => date('w')];
+        $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
+
+        return $this->render('mathematics/1313', ['lessons' => $lessons]);
+    }
+
+    public function action1314()
+    {
+        $this->layout = 'math';
+
+        $conditions = ['week_day' => date('w')];
+        $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
+
+        return $this->render('mathematics/1314', ['lessons' => $lessons]);
     }
 
     public function action1315()
     {
         $this->layout = 'it';
 
-        $conditions = ['week_day' => date('w'),];
+        $conditions = ['week_day' => date('w')];
         $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
 
         return $this->render('1315', ['lessons' => $lessons]);
@@ -96,7 +171,7 @@ class MonitorController extends Controller
     {
         $this->layout = 'pe';
 
-        $conditions = ['week_day' => date('w'),];
+        $conditions = ['week_day' => date('w')];
         $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
 
         return $this->render('pe/1317', ['lessons' => $lessons]);
@@ -106,7 +181,7 @@ class MonitorController extends Controller
     {
         $this->layout = 'pe';
 
-        $conditions = ['week_day' => date('w'),];
+        $conditions = ['week_day' => date('w')];
         $lessons = Monitor::find()->where($conditions)->orderBy('subject_seq')->all();
 
         return $this->render('pe/1322', ['lessons' => $lessons]);

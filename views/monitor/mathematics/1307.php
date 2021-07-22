@@ -8,7 +8,8 @@ $l_block = 'РАСПИСАНИЕ'; //ЛЕВЫЙ БЛОК
 $r_block = 'В ЭТОТ ДЕНЬ РОДИЛИСЬ'; //ПРАВЫЙ БЛОК
 $m_block_1 = 'КРАСОТА МАТЕМАТИКИ'; //СРЕДНИЙ БЛОК 1
 $m_block_2 = 'ИНТЕРЕСНЫЕ ФАКТЫ'; //СРЕДНИЙ БЛОК 2
-$fs_block = ''; //ОТВЕТСТВЕННЫЙ ЗА ПОЖАРНУЮ БЕЗОПАСНОСТЬ
+$fs_block = 'Е.В. Хорькова'; //ОТВЕТСТВЕННЫЙ ЗА ПОЖАРНУЮ БЕЗОПАСНОСТЬ
+$facts_text = 'docs/math.txt'; //ИМЯ ФАЙЛА С ТЕКСТОМ ДЛЯ БЕГУЩЕЙ СТРОКИ
 
 $this->title = $title;
 ?>
@@ -16,7 +17,7 @@ $this->title = $title;
 <div class="container-fluid">
     <div class="row">
         <div class="room_block">
-            <div class="room_number"><?= $title ?></div>
+            <div class="room_number"><img id="r_number" src=<?= Yii::getAlias('@web') . "/img/1307.png" ?>></div>
             <div class="room_name"><?= $room_lesson ?></div>
         </div>
 
@@ -56,20 +57,15 @@ $this->title = $title;
 
             <marquee behavior="" ; direction="up" ; scrollamount="2" height="40%">
                 <ul>
-                    <li>
-                        Среди всех фигур с одинаковым периметром, у круга будет самая большая площадь. И наоборот, среди
-                        всех
-                        фигур с одинаковой площадью, у круга будет самый маленький периметр.
-                    </li>
-                    <li>
-                        Ноль – единственное в математике число, которое нельзя написать римскими цифрами.
-                    </li>
-                    <li>
-                        Число 18 – единственное кроме нуля, сумма цифр которого в два раза меньше него самого.
-                    </li>
-                    <li>
-                        Сумма чисел от 1 до 100 составляет 5050.
-                    </li>
+                    <?php
+                    if(file_exists($facts_text)) {
+
+                        $content = file($facts_text, FILE_IGNORE_NEW_LINES && FILE_SKIP_EMPTY_LINES);
+                        foreach ($content as $line) {
+                            echo('<li>' . $line . '</li>');
+                        }
+                    }
+                    ?>
                 </ul>
             </marquee>
 
@@ -78,5 +74,5 @@ $this->title = $title;
 </div>
 
 <div class="fire-safety_block">
-    <b>&nbsp;Ответственный за пожарную безопасность:</b> <?= $fs_block ?>
+    <b>&nbsp;Ответственный за пожарную безопасность:</b> <span id="fs" style="color: #ffffff;"><?= $fs_block ?></span>
 </div>

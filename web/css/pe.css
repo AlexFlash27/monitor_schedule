@@ -3,7 +3,7 @@ body {
     margin: 15px 15px 0 15px;
     overflow: hidden;
     color: white;
-    background: url(../img/bg1.jpg)
+    background: url(../img/bg1.jpg);
 }
 
 @font-face {
@@ -28,21 +28,20 @@ body {
 }
 
 .room_name {
-    font-size: 70px;
+    font-size: 80px;
     text-align: center;
     padding: 20px 0 0 0;
 }
 
 .schedule_block {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     border: 3px solid #000;
     border-radius: 7px;
     width: calc(50% - 7.5px);
     margin-top: 15px;
     margin-right: 15px;
-    min-height: 30vh;
-    max-height: 47vh;
+    height: 38vh;
     float: left;
     padding: 10px;
 }
@@ -54,8 +53,7 @@ body {
     border-radius: 7px;
     width: calc(50% - 7.5px);
     margin-top: 15px;
-    min-height: 30vh;
-    max-height: 47vh;
+    height: 38vh;
     float: right;
     padding: 10px;
 }
@@ -64,8 +62,7 @@ body {
     font-size: 35px;
     text-align: center;
     width: auto;
-    min-height: 45vh;
-    max-height: 48vh;
+    height: 50vh;
     border: 3px solid #000;
     border-radius: 7px;
     padding-left: 1rem !important;
@@ -75,7 +72,7 @@ body {
 }
 
 .fire-safety_block {
-    font-size: 30px;
+    font-size: 20px;
     text-align: left;
     color: #ed4c47;
 }

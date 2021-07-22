@@ -1,0 +1,90 @@
+body {
+    font-size: 40px;
+    margin: 15px 15px 0 15px;
+    overflow: hidden;
+    color: white;
+    background: url(../img/bg1.jpg);
+}
+
+@font-face {
+    font-family: MISTRAL;
+    src: url(../fonts/MISTRAL.TTF);
+}
+
+.room_block {
+    width: 100%;;
+    border-radius: 7px;
+    border: 3px solid #000;
+    color: #ff0;
+}
+
+.room_number {
+    font-size: 100px;
+    font-family: MISTRAL, sans-serif;
+    float: left;
+    color: #00ff00;
+    padding: 0 20px;
+    border-radius: 7px;
+}
+
+.room_name {
+    font-size: 70px;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.schedule_block {
+    font-size: 25px;
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 7px;
+    width: calc(50% - 7.5px);
+    margin-top: 15px;
+    margin-right: 15px;
+    min-height: 30vh;
+    max-height: 45vh;
+    float: left;
+    padding: 10px;
+}
+
+.info_block {
+    font-size: 35px;
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 7px;
+    width: calc(50% - 7.5px);
+    margin-top: 15px;
+    min-height: 30vh;
+    max-height: 45vh;
+    float: right;
+    padding: 10px;
+}
+
+.tasks_block {
+    font-size: 35px;
+    text-align: center;
+    width: auto;
+    height: 48vh;
+    border: 3px solid #000;
+    border-radius: 7px;
+    padding-left: 1rem !important;
+    padding-top: 1rem !important;
+    margin-top: 1rem !important;
+}
+
+.fire-safety_block {
+    font-size: 30px;
+    text-align: left;
+    color: #ed4c47;
+    margin-top: 1rem !important;
+}
+
+table {
+    border: 3px solid white;
+}
+
+td, tr, th {
+    text-align: left;
+    border: 2px solid black;
+    padding: 8px;
+}

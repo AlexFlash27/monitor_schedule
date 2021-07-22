@@ -8,7 +8,8 @@ $l_block = 'РАСПИСАНИЕ'; //ЛЕВЫЙ БЛОК
 $r_block = 'В ЭТОТ ДЕНЬ РОДИЛИСЬ'; //ПРАВЫЙ БЛОК
 $m_block_1 = 'КРАСОТА МАТЕМАТИКИ'; //СРЕДНИЙ БЛОК 1
 $m_block_2 = 'ИНТЕРЕСНЫЕ ФАКТЫ'; //СРЕДНИЙ БЛОК 2
-$fs_block = ''; //ОТВЕТСТВЕННЫЙ ЗА ПОЖАРНУЮ БЕЗОПАСНОСТЬ
+$fs_block = 'А.Н. Кадрова'; //ОТВЕТСТВЕННЫЙ ЗА ПОЖАРНУЮ БЕЗОПАСНОСТЬ
+$facts_text = 'docs/math.txt'; //ИМЯ ФАЙЛА С ТЕКСТОМ ДЛЯ БЕГУЩЕЙ СТРОКИ
 
 $this->title = $title;
 ?>
@@ -29,7 +30,6 @@ $this->title = $title;
                 <?php if ($lesson->getRoomNumber() == $title) { ?>
                     <p> <?php echo $lesson->subject_seq . '. '; ?><?php echo $lesson->subject_name; ?>
                         <?php echo '(' . $lesson->getClassName() . ')'; ?></p>
-                    <?php /*echo $lesson->getRoomNumber(); */ ?>
 
                 <?php } ?>
 
@@ -58,24 +58,20 @@ $this->title = $title;
 
     <marquee behavior="" ; direction="up" ; scrollamount="2" height="34%">
         <ul>
-            <li>
-                Среди всех фигур с одинаковым периметром, у круга будет самая большая площадь. И наоборот, среди всех
-                фигур с одинаковой площадью, у круга будет самый маленький периметр.
-            </li>
-            <li>
-                Ноль – единственное в математике число, которое нельзя написать римскими цифрами.
-            </li>
-            <li>
-                Число 18 – единственное кроме нуля, сумма цифр которого в два раза меньше него самого.
-            </li>
-            <li>
-                Сумма чисел от 1 до 100 составляет 5050.
-            </li>
+            <?php
+            if(file_exists($facts_text)) {
+
+                $content = file($facts_text, FILE_IGNORE_NEW_LINES && FILE_SKIP_EMPTY_LINES);
+                foreach ($content as $line) {
+                    echo('<li>' . $line . '</li>');
+                }
+            }
+            ?>
         </ul>
     </marquee>
 
 </div>
 
 <div class="fire-safety_block">
-    <b>&nbsp;Ответственный за пожарную безопасность:</b> <?= $fs_block ?>
+    <b>&nbsp;Ответственный за пожарную безопасность:</b> <span id="fs" style="color: #ffffff;"><?= $fs_block ?></span>
 </div>

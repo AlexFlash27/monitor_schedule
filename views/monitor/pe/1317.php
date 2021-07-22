@@ -3,12 +3,12 @@
 /* @var $this yii\web\View */
 
 $title = '1317'; //НОМЕР КАБИНЕТА
-$room_lesson = 'ЮЖНЫЙ ЗАЛ'; //НАЗВАНИЕ КАБИНЕТА
+$room_lesson = 'СЕВЕРНЫЙ ЗАЛ'; //НАЗВАНИЕ КАБИНЕТА
 $l_block = 'РАСПИСАНИЕ'; //ЛЕВЫЙ БЛОК
 $r_block = 'СПОРТСМЕНЫ УДМУРТИИ'; //ПРАВЫЙ БЛОК
-$m_block_1 = 'НОРМАТИВЫ ГТО'; //СРЕДНИЙ БЛОК 1
-$m_block_2 = 'ПРАВИЛА ПОВЕДЕНИЯ И ТЕХНИКА БЕЗОПАСНОСТИ'; //СРЕДНИЙ БЛОК 2
-$fs_block = ''; //ОТВЕТСТВЕННЫЙ ЗА ПОЖАРНУЮ БЕЗОПАСНОСТЬ
+//$m_block_1 = 'НОРМАТИВЫ ГТО' . ' ' . 'ВИДЫ СПОРТА'; //СРЕДНИЙ БЛОК 1
+$m_block_2 = 'ПРАВИЛА БЕЗОПАСНОГО ПОВЕДЕНИЯ'; //СРЕДНИЙ БЛОК 2
+$fs_block = 'А.И. Петухов'; //ОТВЕТСТВЕННЫЙ ЗА ПОЖАРНУЮ БЕЗОПАСНОСТЬ
 
 $this->title = $title;
 ?>
@@ -43,20 +43,20 @@ $this->title = $title;
         <div class="info_block">
             <div id="2" style="color: #ff0;"><?= $r_block ?></div>
             </p>
-            <img id="sportmans" height="626px">
+            <img id="sportsmans" height="626px">
         </div>
     </div>
 </div>
 
 <div class="tasks_block">
-    <div id="3" style="color: #ff0;"><?= $m_block_1 ?></div>
+    <div id="3" style="color: #ff0;">НОРМАТИВЫ ГТО&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ВИДЫ СПОРТА</div>
     </p>
-    <img id="gto1" style="width: 35%;">
-    <img id="gto2" style="width: 35%;">
+    <img id="gto1" style="width: 43%;">
+    <img id="gto2" style="width: 44%;">
     </p>
     <div id="4" style="color: #ff0;"><?= $m_block_2 ?></div>
 
-    <marquee behavior="" ; direction="up" ; scrollamount="1" height="290vh">
+    <marquee behavior="" ; direction="up" ; scrollamount="1" height="160vh" style="font-size: 25px">
         <ul>
             <li>
                 Спортзал учащиеся посещают по расписанию уроков физической культуры и секций.
@@ -94,5 +94,5 @@ $this->title = $title;
 </div>
 
 <div class="fire-safety_block">
-    <b>&nbsp;Ответственный за пожарную безопасность:</b> <?= $fs_block ?>
+    <b>&nbsp;Ответственный за пожарную безопасность:</b> <span id="fs" style="color: #ffffff;"><?= $fs_block ?></span>
 </div>
